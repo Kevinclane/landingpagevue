@@ -167,7 +167,7 @@
           <div class="d-flex justify-content-between row">
             <div class="">
               <i
-                class="fa fa-3x fa-arrow-left m-3"
+                class="fa fa-2x fa-arrow-left m-3"
                 aria-hidden="true"
                 type="button"
                 @click="changeProject(-1)"
@@ -182,7 +182,7 @@
             </div>
             <div class="">
               <i
-                class="fa fa-3x fa-arrow-right m-3"
+                class="fa fa-2x fa-arrow-right m-3"
                 aria-hidden="true"
                 type="button"
                 @click="changeProject(1)"
