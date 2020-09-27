@@ -1,5 +1,5 @@
 module.exports = {
   outputDir: "../client",
   productionSourceMap: false,
-  publicPath: 'landingpagevue'
+  publicPath: '/landingpagevue/'
 };
