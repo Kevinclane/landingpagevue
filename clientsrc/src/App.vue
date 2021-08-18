@@ -32,4 +32,18 @@ export default {
   align-items: center;
   justify-content: center;
 }
+.dynamic-header-3 {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  .dynamic-header-3 {
+    font-size: 2rem;
+  }
+}
+.font-primary {
+  font-family: "Aclonica", sans-serif;
+}
+.color-primary {
+  color: aliceblue;
+}
 </style>

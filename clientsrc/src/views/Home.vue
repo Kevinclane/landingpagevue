@@ -43,13 +43,25 @@
     </div>
     <div class="section-3">
       <project-carousel />
+      <h3
+        class="
+          super-center
+          text-center
+          dynamic-header-3
+          col-8
+          offset-2
+          mt-3
+          color-primary
+        "
+      >
+        Click/tap on a project for more details
+      </h3>
     </div>
   </div>
 </template>
 
 <script>
 import Project from "@/components/ProjectComponent.vue";
-import Circles from "@/components/CirclesComponent.vue";
 import ProjectCarousel from "../components/ProjectCarousel.vue";
 export default {
   name: "home",
@@ -58,7 +70,6 @@ export default {
   methods: {},
   components: {
     Project,
-    Circles,
     ProjectCarousel,
   },
 };
@@ -98,7 +109,19 @@ export default {
 
 .section-3 {
   background-color: black;
-  min-height: 80vh;
+  min-height: 50vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+@media screen and (min-width: 992px) {
+  .section-3 {
+    min-height: 120vh;
+  }
+}
+
+a:hover {
+  background-color: rgb(128, 128, 128, 0.5);
 }
 
 .fs-2 {

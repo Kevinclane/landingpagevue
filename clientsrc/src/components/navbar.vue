@@ -21,7 +21,6 @@
 <script>
 export default {
   name: "Navbar",
-  methods: {},
 };
 </script>
 
@@ -30,6 +29,7 @@ export default {
   background: #2a313b;
   color: aliceblue;
   height: 5vh;
+  z-index: 10;
 }
 span {
   font-weight: bold;
