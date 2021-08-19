@@ -22,13 +22,13 @@ export default new Vuex.Store({
         ],
         imgs: [
           {
+            img: "TimeTrackersProjectView",
+            desc: ""
+          },
+          {
             img: "Timetrackers",
             desc: "Home Page (screen capture cut some off)"
           },
-          {
-            img: "TimeTrackersProjectView",
-            desc: ""
-          }
         ],
         link: "https://www.timetrackers.net/#/"
       },
@@ -93,7 +93,7 @@ export default new Vuex.Store({
             desc: ""
           },
           {
-            img: "TexasHoldEm",
+            img: "TexasHoldemFloor",
             desc: "I didn't have a lot of time to clean up the visuals, but this is supposed to be an overhead view of the casino floor."
           }
         ],

@@ -10,6 +10,16 @@
         background="black"
         style="text-shadow: 3px 2px 2px #333"
       >
+        <b-carousel-slide v-for="project in projects" :key="project.id">
+          <img
+            slot="img"
+            class="d-block img-fluid w-100"
+            :src="require('../assets/projects/' + project.imgs[0].img + '.png')"
+            alt="image slot"
+            v-on:click="loadProject(project.id)"
+          />
+        </b-carousel-slide>
+
         <b-carousel-slide>
           <img
             slot="img"
@@ -19,66 +29,6 @@
             v-on:click="loadProject(0)"
           />
           TimeTrackers
-        </b-carousel-slide>
-        <b-carousel-slide>
-          <img
-            slot="img"
-            class="d-block img-fluid w-100"
-            src="../assets/projects/Volunteer.png"
-            alt="image slot"
-            v-on:click="loadProject(1)"
-          />
-          Volunteer
-        </b-carousel-slide>
-        <b-carousel-slide>
-          <img
-            slot="img"
-            class="d-block img-fluid w-100"
-            src="../assets/projects/BugLogger.png"
-            alt="image slot"
-            v-on:click="loadProject(2)"
-          />
-          Bug Logger
-        </b-carousel-slide>
-        <b-carousel-slide>
-          <img
-            slot="img"
-            class="d-block img-fluid w-100"
-            src="../assets/projects/TexasHoldemTable.png"
-            alt="image slot"
-            v-on:click="loadProject(3)"
-          />
-          Texas Hold 'em
-        </b-carousel-slide>
-        <b-carousel-slide>
-          <img
-            slot="img"
-            class="d-block img-fluid w-100"
-            src="../assets/projects/Pinterest.png"
-            alt="image slot"
-            v-on:click="loadProject(4)"
-          />
-          Pinterest Clone
-        </b-carousel-slide>
-        <b-carousel-slide>
-          <img
-            slot="img"
-            class="d-block img-fluid w-100"
-            src="../assets/projects/IdleMiner.png"
-            alt="image slot"
-            v-on:click="loadProject(5)"
-          />
-          Town Miner
-        </b-carousel-slide>
-        <b-carousel-slide>
-          <img
-            slot="img"
-            class="d-block img-fluid w-100"
-            src="../assets/projects/Inspire.png"
-            alt="image slot"
-            v-on:click="openModal(6)"
-          />
-          Google's Inspire Clone
         </b-carousel-slide>
       </b-carousel>
     </div>

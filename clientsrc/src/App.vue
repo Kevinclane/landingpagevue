@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Luckiest+Guy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aclonica&family=Luckiest+Guy&family=Open+Sans&display=swap");
 .type-button {
   cursor: pointer;
   user-select: none;
@@ -42,6 +42,9 @@ export default {
 }
 .font-primary {
   font-family: "Aclonica", sans-serif;
+}
+.font-secondary {
+  font-family: "Open Sans", sans-serif;
 }
 .color-primary {
   color: aliceblue;

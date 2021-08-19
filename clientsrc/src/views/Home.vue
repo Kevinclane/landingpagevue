@@ -9,7 +9,7 @@
         </div>
       </div>
     </div>
-    <div class="section-2">
+    <div class="section-2 font-secondary">
       <div class="s2-content">
         <img
           class="profile-size my-5"
@@ -52,6 +52,7 @@
           offset-2
           mt-3
           color-primary
+          font-secondary
         "
       >
         Click/tap on a project for more details
@@ -126,10 +127,6 @@ a:hover {
 
 .fs-2 {
   font-size: 2rem;
-}
-
-* {
-  font: serif;
 }
 
 a {
