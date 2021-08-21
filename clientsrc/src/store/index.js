@@ -168,6 +168,63 @@ export default new Vuex.Store({
         link: "https://kevinclane.github.io/week-4-checkpoint/"
       },
 
+    ],
+    techs: [
+      {
+        id: 0,
+        name: "HTML CSS JS",
+        img: "html-css-js"
+      },
+      {
+        id: 1,
+        name: "C#",
+        img: "csharp-icon"
+      },
+      {
+        id: 2,
+        name: "Vue",
+        img: "vue-icon"
+      },
+      {
+        id: 3,
+        name: "Node",
+        img: "node-icon"
+      },
+      {
+        id: 4,
+        name: ".NET",
+        img: "net-icon"
+      },
+      {
+        id: 5,
+        name: "MongoDB",
+        img: "mongo-db-icon"
+      },
+      {
+        id: 6,
+        name: "MySQL",
+        img: "mysql-icon"
+      },
+      {
+        id: 7,
+        name: "APIs",
+        img: "api-icon"
+      },
+      {
+        id: 8,
+        name: "Postman",
+        img: "postman-icon"
+      },
+      {
+        id: 9,
+        name: "MVC",
+        img: "mvc-icon"
+      },
+      {
+        id: 10,
+        name: "Scrum",
+        img: "scrum-icon"
+      },
     ]
   },
   mutations: {

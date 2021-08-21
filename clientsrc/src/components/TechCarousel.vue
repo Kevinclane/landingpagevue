@@ -1,24 +1,22 @@
 <template>
   <div>
-    <div class="col-8 offset-2 font-primary">
+    <div class="col-6 offset-3 font-primary">
       <b-carousel
         id="carousel-1"
         v-model="slide"
         :interval="4000"
         controls
         indicators
-        background="black"
         style="text-shadow: 3px 2px 2px #333"
       >
-        <b-carousel-slide v-for="project in projects" :key="project.id">
+        <b-carousel-slide v-for="tech in techs" :key="tech.id">
           <img
             slot="img"
-            class="d-block img-fluid w-100"
-            :src="require('../assets/projects/' + project.imgs[0].img + '.png')"
+            class="d-block w-100 img-fluid"
+            :src="require('../assets/techs/' + tech.img + '.png')"
             alt="image slot"
-            v-on:click="loadProject(project.id)"
           />
-          {{ project.name }}
+          {{ tech.name }}
         </b-carousel-slide>
       </b-carousel>
     </div>
@@ -27,20 +25,16 @@
 
 <script>
 export default {
-  name: "ProjectCarousel",
+  name: "TechCarousel",
   data() {
     return {
       slide: 0,
     };
   },
-  methods: {
-    loadProject(id) {
-      this.$router.push({ name: "ProjectDetails", params: { id: id } });
-    },
-  },
+  methods: {},
   computed: {
-    projects() {
-      return this.$store.state.projects;
+    techs() {
+      return this.$store.state.techs;
     },
   },
 };

@@ -6,8 +6,8 @@
       </div>
       <div class="col-6 d-flex justify-content-start align-items-center">
         <span class="type-button">About</span>
-        <span class="type-button">Projects</span>
         <span class="type-button">Tech</span>
+        <span class="type-button">Projects</span>
         <span class="type-button">Demos</span>
         <span class="type-button">Contact</span>
       </div>

@@ -42,6 +42,19 @@
       </div>
     </div>
     <div class="section-3">
+      <div class="super-center color-primary">
+        <img class="section-icon" src="../assets/tech-icon.gif" alt="" />
+        <h1 class="text-center m-3">Tech</h1>
+        <img class="section-icon" src="../assets/tech-icon.gif" alt="" />
+      </div>
+      <tech-carousel />
+    </div>
+    <div class="section-4">
+      <div class="super-center color-primary">
+        <img class="section-icon" src="../assets/project-icon.gif" alt="" />
+        <h1 class="text-center m-3">Projects</h1>
+        <img class="section-icon" src="../assets/project-icon.gif" alt="" />
+      </div>
       <project-carousel />
       <h3
         class="
@@ -64,6 +77,7 @@
 <script>
 import Project from "@/components/ProjectComponent.vue";
 import ProjectCarousel from "../components/ProjectCarousel.vue";
+import TechCarousel from "../components/TechCarousel.vue";
 export default {
   name: "home",
   mounted() {},
@@ -72,6 +86,7 @@ export default {
   components: {
     Project,
     ProjectCarousel,
+    TechCarousel,
   },
 };
 </script>
@@ -115,14 +130,32 @@ export default {
   padding-bottom: 5vh;
 }
 
+.section-4 {
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background-color: #2a313b;
+  min-height: 50vh;
+}
+
 @media screen and (min-width: 992px) {
   .section-3 {
     min-height: 120vh;
   }
+  .section-4 {
+    min-height: 100vh;
+  }
+}
+
+.section-icon {
+  height: 4rem;
 }
 
 a:hover {
   background-color: rgb(128, 128, 128, 0.5);
+}
+
+.fs-half {
+  font-size: 0.5em;
 }
 
 .fs-2 {
