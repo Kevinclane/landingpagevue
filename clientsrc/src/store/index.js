@@ -220,11 +220,6 @@ export default new Vuex.Store({
         name: "MVC",
         img: "mvc-icon"
       },
-      {
-        id: 10,
-        name: "Scrum",
-        img: "scrum-icon"
-      },
     ]
   },
   mutations: {

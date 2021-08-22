@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="col-6 offset-3 font-primary">
+    <div class="col-4 offset-4 font-primary">
       <b-carousel
         id="carousel-1"
         v-model="slide"

@@ -71,6 +71,17 @@
         Click/tap on a project for more details
       </h3>
     </div>
+    <div class="section-5">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/l_F-LBtglJA"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
   </div>
 </template>
 
@@ -125,7 +136,7 @@ export default {
 
 .section-3 {
   background-color: black;
-  min-height: 50vh;
+  min-height: 80vh;
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
@@ -138,11 +149,8 @@ export default {
 }
 
 @media screen and (min-width: 992px) {
-  .section-3 {
-    min-height: 120vh;
-  }
   .section-4 {
-    min-height: 100vh;
+    min-height: 90vh;
   }
 }
 
