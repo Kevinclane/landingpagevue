@@ -61,6 +61,7 @@ export default {
 <style scoped>
 .bg {
   background-color: #29084a;
+  min-height: 95vh;
 }
 li {
   background-color: #2a313b;

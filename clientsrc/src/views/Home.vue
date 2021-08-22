@@ -1,5 +1,5 @@
 <template>
-  <div class="w-100">
+  <div class="w-100 home">
     <div class="section-1 super-center">
       <div class="s1-content">
         <div>Kevin Lane</div>
@@ -72,15 +72,76 @@
       </h3>
     </div>
     <div class="section-5">
-      <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/l_F-LBtglJA"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <div class="super-center color-primary">
+        <img class="section-icon mirror" src="../assets/demo-icon.gif" alt="" />
+        <h1 class="text-center m-3">Demos</h1>
+        <img class="section-icon" src="../assets/demo-icon.gif" alt="" />
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col super-center my-3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/l_F-LBtglJA"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-6">
+      <div class="super-center color-primary">
+        <img
+          class="section-icon mirror"
+          src="../assets/contact-icon.gif"
+          alt=""
+        />
+        <h1 class="text-center m-3">Contact</h1>
+        <img class="section-icon" src="../assets/contact-icon.gif" alt="" />
+      </div>
+      <div class="container-fluid">
+        <div class="row pb-3">
+          <div class="col-12 col-lg-4 my-2">
+            <div class="row">
+              <div class="col-6 super-center">
+                <i
+                  class="fa fa-3x li-color fa-linkedin-square mx-3"
+                  aria-hidden="true"
+                ></i>
+              </div>
+              <div class="col-6 super-center">
+                <i
+                  class="fa fa-3x text-white fa-github mx-3"
+                  aria-hidden="true"
+                ></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-4 my-2">
+            <span class="pill-button-yellow type-button super-center w-100"
+              >Resume</span
+            >
+          </div>
+
+          <div class="col-12 col-lg-4 d-flex justify-content-around my-2">
+            <div class="row">
+              <div class="super-center text-white flow-column col-6">
+                <i class="fa fa-2x fa-mobile" aria-hidden="true"> </i>
+                <div>(208) 251-1087</div>
+              </div>
+              <div class="super-center text-white flow-column col-6">
+                <i class="fa fa-2x fa-envelope" aria-hidden="true"></i>
+                <div>kevinclane21@gmail.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -91,9 +152,6 @@ import ProjectCarousel from "../components/ProjectCarousel.vue";
 import TechCarousel from "../components/TechCarousel.vue";
 export default {
   name: "home",
-  mounted() {},
-  computed: {},
-  methods: {},
   components: {
     Project,
     ProjectCarousel,
@@ -136,7 +194,7 @@ export default {
 
 .section-3 {
   background-color: black;
-  min-height: 80vh;
+  min-height: 40vh;
   padding-top: 5vh;
   padding-bottom: 5vh;
 }
@@ -152,14 +210,44 @@ export default {
   .section-4 {
     min-height: 90vh;
   }
+  .section-3 {
+    min-height: 80vh;
+  }
+}
+
+.section-5 {
+  background-color: #29084a;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+
+.section-6 {
+  background-color: #2a313b;
 }
 
 .section-icon {
   height: 4rem;
 }
 
+.mirror {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.home {
+  overflow-x: hidden;
+}
+
 a:hover {
   background-color: rgb(128, 128, 128, 0.5);
+}
+
+.li-color {
+  color: #0a66c2;
+}
+
+.git-color {
+  color: #30363d;
 }
 
 .fs-half {
@@ -168,6 +256,10 @@ a:hover {
 
 .fs-2 {
   font-size: 2rem;
+}
+
+.flow-column {
+  flex-direction: column;
 }
 
 a {

@@ -4,7 +4,9 @@
       <div class="col-3">
         <i class="fa fa-2x fa-home type-button" aria-hidden="true"></i>
       </div>
-      <div class="col-6 d-flex justify-content-start align-items-center">
+      <div
+        class="col-6 d-flex justify-content-start align-items-center hide-sm"
+      >
         <span class="type-button">About</span>
         <span class="type-button">Tech</span>
         <span class="type-button">Projects</span>
@@ -12,7 +14,7 @@
         <span class="type-button">Contact</span>
       </div>
       <div class="col-3 super-center">
-        <span class="pill-button-yellow">Resume</span>
+        <span class="pill-button-yellow type-button">Resume</span>
       </div>
     </div>
   </div>
@@ -34,5 +36,13 @@ export default {
 span {
   font-weight: bold;
   margin-right: 2em;
+}
+.hide-sm {
+  visibility: hidden;
+}
+@media screen and (min-width: 992px) {
+  .hide-sm {
+    visibility: visible;
+  }
 }
 </style>
