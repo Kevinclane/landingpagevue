@@ -9,7 +9,7 @@
         </div>
       </div>
     </div>
-    <div class="section-2 font-secondary">
+    <div class="section-2 font-secondary" id="About">
       <div class="s2-content">
         <img
           class="profile-size my-5"
@@ -41,7 +41,7 @@
         </div>
       </div>
     </div>
-    <div class="section-3">
+    <div class="section-3" id="Tech">
       <div class="super-center color-primary">
         <img class="section-icon" src="../assets/tech-icon.gif" alt="" />
         <h1 class="text-center m-3">Tech</h1>
@@ -49,7 +49,7 @@
       </div>
       <tech-carousel />
     </div>
-    <div class="section-4">
+    <div class="section-4" id="Projects">
       <div class="super-center color-primary">
         <img class="section-icon" src="../assets/project-icon.gif" alt="" />
         <h1 class="text-center m-3">Projects</h1>
@@ -71,7 +71,7 @@
         Click/tap on a project for more details
       </h3>
     </div>
-    <div class="section-5">
+    <div class="section-5" id="Demos">
       <div class="super-center color-primary">
         <img class="section-icon mirror" src="../assets/demo-icon.gif" alt="" />
         <h1 class="text-center m-3">Demos</h1>
@@ -93,7 +93,7 @@
         </div>
       </div>
     </div>
-    <div class="section-6">
+    <div class="section-6" id="Contact">
       <div class="super-center color-primary">
         <img
           class="section-icon mirror"
@@ -152,6 +152,12 @@ import ProjectCarousel from "../components/ProjectCarousel.vue";
 import TechCarousel from "../components/TechCarousel.vue";
 export default {
   name: "home",
+  mounted() {
+    if (window.location.hash != "#/") {
+      let split = window.location.hash.split("/");
+      document.getElementById(split[1]).scrollIntoView();
+    }
+  },
   components: {
     Project,
     ProjectCarousel,
@@ -238,10 +244,6 @@ export default {
   overflow-x: hidden;
 }
 
-a:hover {
-  background-color: rgb(128, 128, 128, 0.5);
-}
-
 .li-color {
   color: #0a66c2;
 }
@@ -267,6 +269,7 @@ a {
 }
 a:hover {
   color: black;
+  background-color: rgb(128, 128, 128, 0.5);
 }
 .profile-size {
   height: 25vh;

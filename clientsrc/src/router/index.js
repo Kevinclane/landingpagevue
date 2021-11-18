@@ -13,6 +13,11 @@ const routes = [
     component: Home
   },
   {
+    path: "/:id",
+    name: "HomeWithLink",
+    component: Home
+  },
+  {
     path: "/projectdetails/:id",
     name: "ProjectDetails",
     component: ProjectDetails

@@ -7,11 +7,21 @@
       <div
         class="col-6 d-flex justify-content-start align-items-center hide-sm"
       >
-        <span class="type-button">About</span>
-        <span class="type-button">Tech</span>
-        <span class="type-button">Projects</span>
-        <span class="type-button">Demos</span>
-        <span class="type-button">Contact</span>
+        <span>
+          <a class="nav-link" href="#About"> About </a>
+        </span>
+        <span>
+          <a class="nav-link" href="#Tech"> Tech </a>
+        </span>
+        <span>
+          <a class="nav-link" href="#Projects"> Projects </a>
+        </span>
+        <span>
+          <a class="nav-link" href="#Demos"> Demos </a>
+        </span>
+        <span>
+          <a class="nav-link" href="#Contact"> Contact </a>
+        </span>
       </div>
       <div class="col-3 super-center">
         <span class="pill-button-yellow type-button">Resume</span>
@@ -44,5 +54,14 @@ span {
   .hide-sm {
     visibility: visible;
   }
+}
+.nav-link {
+  text-decoration: none;
+  color: white;
+}
+.nav-link:hover {
+  text-decoration: none;
+  color: #29084a;
+  background-color: transparent;
 }
 </style>

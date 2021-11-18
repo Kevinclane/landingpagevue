@@ -207,16 +207,11 @@ export default new Vuex.Store({
       },
       {
         id: 7,
-        name: "APIs",
-        img: "api-icon"
-      },
-      {
-        id: 8,
         name: "Postman",
         img: "postman-icon"
       },
       {
-        id: 9,
+        id: 8,
         name: "MVC",
         img: "mvc-icon"
       },

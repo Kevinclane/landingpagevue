@@ -1,5 +1,5 @@
 <template>
-  <div class="container color-primary bg">
+  <div class="container color-primary bg text-lg">
     <div class="row">
       <div class="col mt-3">
         <i
@@ -43,10 +43,11 @@ export default {
   name: "ProjectDetails",
   mounted() {
     this.$store.dispatch("setActiveProject", this.$route.params.id);
+    window.scrollTo(0, 0);
   },
   methods: {
     returnToHome() {
-      this.$router.push({ name: "Home" });
+      this.$router.push({ name: "HomeWithLink", params: { id: "Projects" } });
     },
   },
   computed: {
@@ -69,5 +70,8 @@ li {
   border-radius: 10px;
   box-shadow: 3px 5px 5px black;
   list-style-type: none;
+}
+.text-lg {
+  font-size: larger;
 }
 </style>
