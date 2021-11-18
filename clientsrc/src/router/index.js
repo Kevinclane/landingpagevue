@@ -21,6 +21,11 @@ const routes = [
     path: "/projectdetails/:id",
     name: "ProjectDetails",
     component: ProjectDetails
+  },
+  {
+    path: '*',
+    name: "catchAll",
+    component: Home
   }
 ];
 

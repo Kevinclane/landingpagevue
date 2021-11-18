@@ -9,7 +9,7 @@ cd ..
 cd client
 # if you are deploying to a custom domain
 # echo 'www.example.com' > CNAME
-# git init
+git init
 git add -A
 git commit -m 'deploy'
 git push -f https://github.com/Kevinclane/landingpagevue.git master:gh-pages
